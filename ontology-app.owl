@@ -1,0 +1,641 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#"
+     xml:base="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:obda="https://w3id.org/obda/vocabulary#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#belongs_to_industry -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#belongs_to_industry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#has_a_description -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#has_a_description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Description"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#has_a_founding_date -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#has_a_founding_date">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Founded_In"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#has_a_location -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#has_a_location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Location"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#has_a_logo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#has_a_logo">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Logo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#has_a_name -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#has_a_name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Description -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Description">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Description"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Industry -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Industry">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Location -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Location">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Location"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Logo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Logo">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Images"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Logo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Name">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#normalizedString"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Founded_In -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Founded_In">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Founded_In"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Images -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Images">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Thumbnails -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Thumbnails">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Images"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Thumbnail"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#anyURI"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Accounting -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Accounting">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Accounting</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Advertising -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Advertising">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Advertising</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Agriculture -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Agriculture">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Agriculture</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Banking -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Banking">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Banking</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Clothing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Clothing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Clothing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Communications -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Communications">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Communications</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company">
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Name"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Company</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Construction -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Construction">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Construction</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Description -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Description">
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Description"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Description</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Energy-based -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Energy-based">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Energy-based</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Engineering -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Engineering">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Engineering</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Fashion -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Fashion">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Fashion</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Fireworks -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Fireworks">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Fireworks</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Fisheries -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Fisheries">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Fisheries</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Founded_In -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Founded_In"/>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Horological -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Horological">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Horological</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Hospitality -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Hospitality">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Hospitality</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Industry</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Insurance -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Insurance">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Insurance</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Jewellery -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Jewellery">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Jewellery</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Location -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Location">
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Location"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Location</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Locksmiths -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Locksmiths">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Locksmiths</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Logo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Logo">
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company_Logo"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Logo</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Marketing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Marketing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Marketing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Mining -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Mining">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Mining</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Plastics -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Plastics">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Plastics</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Postal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Postal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Postal</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Publishing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Publishing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Publishing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Retailing -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Retailing">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Retailing</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Security -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Security">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Security</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Talent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Talent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Talent</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Textile -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Textile">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Textile</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Thumbnail -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Thumbnail">
+        <rdfs:isDefinedBy rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Thumbnails"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Transport -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Transport">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Transport</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Wine -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Wine">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Industry"/>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Wine</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Apple_Inc. -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Apple_Inc.">
+        <rdf:type rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Communications"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+        <belongs_to_industry rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Apple_Inc."/>
+        <has_a_description rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Apple_Inc."/>
+        <Company_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Apple Inc. is an American multinational technology company headquartered in Cupertino, California, that designs, develops, and sells consumer electronics, computer software, and online services. Its hardware products include the iPhone smartphone, the iPad tablet computer, the Mac personal computer, the iPod portable media player, the Apple Watch smartwatch, and the Apple TV digital media player. Apple&apos;s consumer software includes the macOS and iOS operating systems, the iTunes media player, the Safari web browser, and the iLife and iWork creativity and productivity suites. Its online services include the iTunes Store, the iOS App Store and Mac App Store, Apple Music, and iCloud. Apple was founded by Steve Jobs, Steve Wozniak, and Ronald Wayne in April 1976 to develop and sell personal computers. It was incorporated as Apple Computer, Inc. in January 1977, and was renamed as Apple Inc. in January 2007 to reflect its shifted focus toward consumer electronics. Apple (NASDAQ: AAPL) joined the Dow Jones Industrial Average in March 2015. Apple is the world&apos;s largest information technology company by revenue, the world&apos;s largest technology company by total assets, and the world&apos;s second-largest mobile phone manufacturer. In November 2014, in addition to being the largest publicly traded corporation in the world by market capitalization, Apple became the first U.S. company to be valued at over US$700 billion. The company employs 115,000 permanent full-time employees as of July 2015 and maintains 478 retail stores in seventeen countries as of March 2016. It operates the online Apple Store and iTunes Store, the latter of which is the world&apos;s largest music retailer. There are over one billion actively used Apple products worldwide as of March 2016. Apple&apos;s worldwide annual revenue totaled $233 billion for the fiscal year ending in September 2015. This revenue generation accounts for approximately 1.25% of the total United States GDP. The company enjoys a high level of brand loyalty and, according to Interbrand&apos;s annual Best Global Brands report, has been the world&apos;s most valuable brand for 4 years in a row, with a valuation in 2016 of $178.1 billion. The corporation receives significant criticism regarding the labor practices of its contractors and its environmental and business practices, including the origins of source materials. In August 2016, after a three-year investigation by the EU&apos;s competition commissioner that concluded that Apple received &quot;illegal state aid&quot; from Ireland, the EU ordered Apple to pay 13 billion euros ($14.5 billion), plus interest, in unpaid taxes. (en)</Company_Description>
+        <Company_Location rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Cupertino, California, United States</Company_Location>
+        <Company_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Apple Inc.</Company_Name>
+        <Founded_In rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1976-04-01T00:00:00</Founded_In>
+        <Thumbnails rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Apple_Headquarters_in_Cupertino.jpg/300px-Apple_Headquarters_in_Cupertino.jpg</Thumbnails>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Apple Inc.</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Chevrolet -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Chevrolet">
+        <rdf:type rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Transport"/>
+        <owl:sameAs rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Daewoo"/>
+        <belongs_to_industry rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Chevrolet"/>
+        <has_a_description rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Chevrolet"/>
+        <has_a_location rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Chevrolet"/>
+        <has_a_name rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Chevrolet"/>
+        <Company_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Chevrolet (/ÊƒÉ›vrÉ™ËˆleÉª/ shev-rÉ™-LAY), colloquially referred to as Chevy and formally the Chevrolet Division of General Motors Company, is an American automobile division of the American manufacturer General Motors (GM). Louis Chevrolet and ousted General Motors founder William C. Durant started the company on November 3, 1911  as the Chevrolet Motor Car Company. Durant used the Chevrolet Motor Car Company to acquire a controlling stake in General Motors with a reverse merger occurring on May 2, 1918 and propelled himself back to the GM presidency. After Durant&apos;s second ousting in 1919, Alfred Sloan, with his maxim &quot;a car for every purse and purpose,&quot; would pick the Chevrolet brand to become the volume leader in the General Motors family, selling mainstream vehicles to compete with Henry Ford&apos;s Model T in 1919 and overtaking Ford as the best-selling car in the United States by 1929. Chevrolet-branded vehicles are sold in most automotive markets worldwide, with the notable exception of Oceania, where GM is represented by its Australian subsidiary, Holden. In 2005, Chevrolet was relaunched in Europe, primarily selling vehicles built by GM Daewoo of South Korea with the tagline &quot;Daewoo has grown up enough to become Chevrolet&quot;, a move rooted in General Motors&apos; attempt to build a global brand around Chevrolet. With the reintroduction of Chevrolet to Europe, GM intended Chevrolet to be a mainstream value brand, while GM&apos;s traditional European standard-bearers, Opel of Germany, and Vauxhall of England would be moved upmarket. However, GM reversed this move in late 2013, announcing that the brand would be withdrawn from Europe, with the exception of the Camaro and Corvette in 2016. Chevrolet vehicles will continue to be marketed in the CIS states, including Russia. After General Motors fully acquired GM Daewoo in 2011 to create GM Korea, the last usage of the Daewoo automotive brand was discontinued in its native South Korea and succeeded by Chevrolet. In North America, Chevrolet produces and sells a wide range of vehicles, from subcompact automobiles to medium-duty commercial trucks. Due to the prominence and name recognition of Chevrolet as one of General Motors&apos; global marques, Chevrolet, Chevy or Chev is used at times as a synonym for General Motors or its products, one example being the GM LS1 engine, commonly known by the name or a variant thereof of its progenitor, the Chevrolet small-block engine.</Company_Description>
+        <Company_Industry rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Automobile and Transportation</Company_Industry>
+        <Company_Location rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Detroit, Michigan, USA</Company_Location>
+        <Company_Logo rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://commons.wikimedia.org/wiki/Special:FilePath/Chevy_logo_1911.png</Company_Logo>
+        <Company_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Chevrolet</Company_Name>
+        <Founded_In rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1911-11-03T00:00:00</Founded_In>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Chevrolet</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Chick-Fil-A -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Chick-Fil-A">
+        <rdf:type rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Hospitality"/>
+        <Company_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Chick-fil-A (CHIK-fil-AY, a play on the US pronunciation of &quot;fillet&quot;) is an American fast food restaurant chain headquartered in the Atlanta suburb of College Park, Georgia, specializing in chicken sandwiches. Founded in May 1946, it has more than 2,000 restaurants, mainly in the southeastern United States. The company&apos;s culture is influenced by its founder Truett Cathy&apos;s Southern Baptist beliefs; all Chick-fil-A restaurants are closed for business on Sunday as well as Thanksgiving and Christmas.</Company_Description>
+        <Company_Industry rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Food and Hospitality</Company_Industry>
+        <Company_Location rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Hapeville, Georgia, United States</Company_Location>
+        <Company_Name rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Chick-Fil-A</Company_Name>
+        <Founded_In rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1946-05-23T00:00:00</Founded_In>
+        <Thumbnails rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://commons.wikimedia.org/wiki/Special:FilePath/ChikfilaMcDonaldsGalleria.JPG</Thumbnails>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Chick-Fil-A</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Daewoo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Daewoo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Company"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Transport"/>
+        <Company_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Daewoo (&quot;Dae&quot; Hangul: ëŒ€. Korean for &quot;Great&quot; and &quot;Woo&quot; Hangul: ìš°. Korean the first name of founder and chairman Kim Woo-jung) or the Daewoo Group was a major South Korean chaebol (conglomerate). It was founded on 22 March 1967 as Daewoo Industrial and was dismantled by the Korean government in 1999. Prior to the Asian financial crisis, Daewoo was the second largest conglomerate in Korea after Hyundai Group, followed by LG Group and Samsung. There were about 20 divisions under the Daewoo Group, some of which survive today as independent companies.</Company_Description>
+        <Company_Industry rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Transportation</Company_Industry>
+        <Company_Location rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Korea</Company_Location>
+        <Founded_In rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1967-03-22T00:00:00</Founded_In>
+        <Thumbnails rdf:datatype="http://www.w3.org/2001/XMLSchema#anyURI">http://commons.wikimedia.org/wiki/Special:FilePath/Seoul_Square.jpg</Thumbnails>
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Daewoo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#DaewooDescription -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#DaewooDescription">
+        <Company_Description rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Daewoo (&quot;Dae&quot; Hangul: ëŒ€. Korean for &quot;Great&quot; and &quot;Woo&quot; Hangul: ìš°. Korean the first name of founder and chairman Kim Woo-jung) or the Daewoo Group was a major South Korean chaebol (conglomerate). It was founded on 22 March 1967 as Daewoo Industrial and was dismantled by the Korean government in 1999. Prior to the Asian financial crisis, Daewoo was the second largest conglomerate in Korea after Hyundai Group, followed by LG Group and Samsung. There were about 20 divisions under the Daewoo Group, some of which survive today as independent companies.</Company_Description>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Founded_In">
+        <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#normalizedString">Founded_In</rdfs:label>
+    </rdf:Description>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Accounting"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Advertising"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Agriculture"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Banking"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Clothing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Communications"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Construction"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Energy-based"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Engineering"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Fashion"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Fireworks"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Fisheries"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Horological"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Hospitality"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Insurance"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Jewellery"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Locksmiths"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Marketing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Mining"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Plastics"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Postal"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Publishing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Retailing"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Security"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Talent"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Textile"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Transport"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/test/ontologies/2019/11/untitled-ontology-2#Wine"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

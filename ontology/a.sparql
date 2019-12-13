@@ -1,0 +1,70 @@
+PREFIX foaf:        <http://xmlns.com/foaf/0.1/>
+PREFIX rdfs:        <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX owl:         <http://www.w3.org/2002/07/owl#>
+PREFIX dbpedia-owl: <http://dbpedia.org/ontology/> 
+PREFIX dbpedia:     <http://dbpedia.org/property/>
+PREFIX sindicetech: <http://sindicetech.com/ontology/>
+
+
+CONSTRUCT{
+    ?iri a dbpedia-owl:Company;
+         foaf:name ?companyName;
+         dbpedia-owl:abstract ?description;
+         owl:sameAs ?sameAs;
+	 dbpedia:countryCode ?countryCode;
+         sindicetech:locationName ?locationName;
+         sindicetech:locationCityName ?locationCityName
+}WHERE{
+  ?iri a dbpedia-owl:Company.
+  OPTIONAL{  
+       ?iri dbpedia-owl:abstract ?description.
+       FILTER( lang(?description) = "en")
+  }
+  {
+    OPTIONAL{  
+      ?iri foaf:name ?companyName.
+      FILTER( lang(?companyName) = "en")
+    }
+  }UNION{
+    OPTIONAL{     
+      ?iri rdfs:label ?companyName .
+      FILTER( lang(?companyName) = "en")
+    }
+  }
+  OPTIONAL{     
+      ?iri owl:sameAs ?sameAs
+  } 
+  {
+    OPTIONAL{     
+      ?iri dbpedia:locationCountry ?country.
+      ?country dbpedia:countryCode ?countryCode 
+      FILTER( lang(?countryCode) = "en")
+    }
+  }UNION{  
+    OPTIONAL{     
+      ?iri dbpedia-owl:locationCountry ?country.
+      ?country dbpedia:countryCode ?countryCode 
+      FILTER( lang(?countryCode) = "en")
+    } 
+  }
+  OPTIONAL{
+      ?iri dbpedia-owl:location ?location.
+      ?location dbpedia:name ?locationName
+      FILTER( lang(?locationName) = "en")
+  }
+  OPTIONAL{
+      ?iri dbpedia-owl:locationCity ?locationCity.
+      ?locationCity rdfs:label ?locationCityName
+      FILTER( lang(?locationCityName) = "en")
+    
+  }
+}
+
+prefix dbpedia-owl: <http://dbpedia.org/ontology/>
+
+select distinct ?company ?logo ?description
+where {
+  values ?hasLogo { foaf:depiction dbpedia-owl:thumbnail }
+  ?company a dbpedia-owl:Company; dbpedia-owl:abstract ?description; ?hasLogo ?logo.
+  filter( langMatches(lang(?description),"en") )
+}
